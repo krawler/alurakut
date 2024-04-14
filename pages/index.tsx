@@ -34,7 +34,7 @@ const MainGrid = styled.main`
   }
 `;
 
-function ProfileSidebar(propriedades){
+function ProfileSidebar(propriedades: any){
   console.log(propriedades);
   return (
     <Box>
