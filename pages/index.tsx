@@ -11,6 +11,7 @@ import styled from "styled-components";
 import {AlurakutMenu, AlurakutProfileSidebarMenuDefault, OrkutNostalgicIconSet} from "../lib/AluraCommons";
 import Box from "@/components/Box"
 import {ProfileRelationsBoxWrapper} from "@/components/ProfileRelations"
+import React from "react"
 
 
 const MainGrid = styled.main`
@@ -53,6 +54,7 @@ function ProfileSidebar(propriedades: any){
 
 export default function Home() {
 
+  const comunidades = React.useState(['AluraKut']);
   const usuarioAleatorio = 'krawler';
   const pessoasFavoritas = ['juunegreiros', 'omariosouto', 'peas', 'rafabellerini', 'felipefialho']
 
@@ -70,8 +72,7 @@ export default function Home() {
           </Box>
           <Box>
             <h2 className="subTitle">O que você deseja fazer?</h2>
-            <form action="">
-             
+            <form action="">             
               <div>
                 <input type="text" name="title"  id="title" 
                        aria-label="Qual vai ser o nome da sua comunidade?"
